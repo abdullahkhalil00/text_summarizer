@@ -1,5 +1,6 @@
 import nltk
 import heapq
+import math
 nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
@@ -94,6 +95,26 @@ def generate_summary(lemmatized_words, sentences):
 def count_frequency(lemmatized_words):
     from collections import Counter
     return Counter(lemmatized_words)
+import math
+from nltk.tokenize import word_tokenize
+
+def TF_IDF(lemmatized_words, sentences):
+    frequency = count_frequency(lemmatized_words)
+    tf_idf_scores = {}
+    for sentence in sentences:
+        for word in word_tokenize(sentence.lower()):
+            if word in frequency:
+                tf = frequency[word] / len(lemmatized_words)
+                df = sum(1 for s in sentences if word in s.lower())
+                idf = math.log(len(sentences) / (1 + df))
+                tf_idf_score = tf * idf
+                if sentence not in tf_idf_scores:
+                    tf_idf_scores[sentence] = tf_idf_score
+                else:
+                    tf_idf_scores[sentence] += tf_idf_score
+    summary_sentences = heapq.nlargest(5, tf_idf_scores, key=tf_idf_scores.get)
+    summary = ' '.join(summary_sentences)
+    return summary
 
 
 filehandling()
