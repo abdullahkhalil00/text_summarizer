@@ -2,7 +2,7 @@
 
 > An NLP-powered document summarization app — paste text, upload a TXT or PDF, and get instant summaries using two different algorithms.
 
-🔗 **Live App:** [textsummarizer-f8vqd6wbndelqprpqw6c87.streamlit.app](https://textsummarizer-f8vqd6wbndelqprpqw6c87.streamlit.app/)
+🔗 **Live App:** [https://textsummarizer-cquhjmw7kqfvjappgkkbjs3.streamlit.app/](https://textsummarizer-cquhjmw7kqfvjappgkkbjs3.streamlit.app/)
 
 ---
 
@@ -150,7 +150,7 @@ text-summarizer/
 
 This app is deployed on **Streamlit Community Cloud** — free hosting with auto-deploy on every push to the repository.
 
-🔗 [https://textsummarizer-f8vqd6wbndelqprpqw6c87.streamlit.app/](https://textsummarizer-f8vqd6wbndelqprpqw6c87.streamlit.app/)
+🔗 [https://textsummarizer-cquhjmw7kqfvjappgkkbjs3.streamlit.app/](https://textsummarizer-cquhjmw7kqfvjappgkkbjs3.streamlit.app/)
 
 ---
 
