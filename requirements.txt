@@ -3,3 +3,7 @@ PyPDF2
 nltk
 scikit-learn
 reportlab
+langdetect
+deep-translator
+torch
+transformers
