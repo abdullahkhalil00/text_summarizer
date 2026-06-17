@@ -1,9 +1,14 @@
-streamlit
-PyPDF2
-nltk
-scikit-learn
-reportlab
-langdetect
-deep-translator
+streamlit>=1.38
+pypdf>=4.3
+scikit-learn>=1.5
+reportlab>=4.2
+langdetect>=1.0.9
+deep-translator>=1.11
+
+# CPU-only PyTorch build — much smaller download/install and lower RAM than
+# the default PyPI "torch" package, which bundles unused CUDA/GPU libraries.
+# Streamlit Community Cloud has no GPU, so the CPU wheel is strictly better here.
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
-transformers
+
+transformers>=4.44
