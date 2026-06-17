@@ -5,9 +5,7 @@ reportlab>=4.2
 langdetect>=1.0.9
 deep-translator>=1.11
 
-# CPU-only PyTorch build — much smaller download/install and lower RAM than
-# the default PyPI "torch" package, which bundles unused CUDA/GPU libraries.
-# Streamlit Community Cloud has no GPU, so the CPU wheel is strictly better here.
+
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch
 
